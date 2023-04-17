@@ -10,6 +10,7 @@ HTML {
     background-image: url(./bgc2.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 .contacts {
     position: relative;
@@ -22,7 +23,7 @@ HTML {
 }
 span {
     position: relative;
-    right: -130px;
+    right: -40%;
 }
 
 .menu {
@@ -98,3 +99,41 @@ span {
   button:focus {
     color: rgb(233, 62, 62);
   }
+ .box1:hover,
+ .box2:hover,
+ .box3:hover,
+ .box4:hover {
+    color: rgb(85, 191, 240);
+    transition: 0.8s ease-in-out;
+ }
+ p {
+    margin: 2.5px;
+ }
+ .box1-content p:hover,
+ .box2-content p:hover {
+    color: rgb(244, 65, 5);
+    transition: 0.4s;
+ }
+ .box1-content {
+     position: absolute;
+     z-index: 1;
+     margin: 2%;
+     left: 5.5%;
+     display: none;
+     color: white;
+ }
+.box2-content {
+    position: absolute;
+     z-index: 1;
+     margin: 2%;
+     left: 27%;
+     color: white;
+     display: none;
+}
+ .box1:hover .box1-content {
+    display: block;
+    
+}
+.box2:hover .box2-content {
+    display: block;
+}
