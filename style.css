@@ -7,22 +7,37 @@
 HTML {
     height: 100%;
     width: 100%;
-    background-image: url(./bgc2.jpg);
+    background-image: url(./bgc2.jpg); 
+    background-repeat: no-repeat;
     background-size: cover;
+}
+.contacts {
+    position: relative;
+    color: white;
+    bottom: -60px;
+    right: -11px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: white;
+}
+span {
+    position: relative;
+    right: -130px;
 }
 
 .menu {
     display: flex;
-    margin-top: 18%;
-    width: 84%;
-    height: 25px;
-    margin-left: 8%;
+    margin-top: 20%;
+    width: 94%;
+    height: 30px;
+    margin-left: 3%;
     flex-direction: row;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     color: white;
+    
     
     
   }
@@ -59,9 +74,9 @@ HTML {
     border-color: white;
   }
   .buttons {
-   display: flex;
+    display: flex;
     justify-content: center;
-    margin-top: 85%;
+    margin-top: 450px;
    
   }
   button {
@@ -69,12 +84,17 @@ HTML {
     font-size: 14px;
     text-align: center;
     color: white;
-    width: 35%;
-    height: 5%;
+    width: 40%;
+    height: 35px;
     background-color: #998431;
     margin: 2%;
   }
-button:hover {
-    box-shadow: 0px 0px 10px 2px blue;
-    transition: 0.5s;
-}
+
+
+  button:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  }
+  button:focus {
+    color: rgb(233, 62, 62);
+  }
