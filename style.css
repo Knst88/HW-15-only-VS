@@ -15,19 +15,19 @@ HTML {
     
 }
 .contacts {
-    position: relative;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
     color: white;
-    bottom: -60px;
-    right: -11px;
+    margin-top: 15%;
+    margin-left: 13px;
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     color: white;
-    
 }
-span {
-    position: relative;
-    left: 33%;
-}
+
+
 
 .menu {
     display: flex;
@@ -114,7 +114,8 @@ span {
  }
  .box1-content p:hover,
  .box2-content p:hover,
- .box3-content p:hover {
+ .box3-content p:hover,
+ .box4-content p:hover {
     color: rgb(244, 65, 5);
     transition: 0.4s;
  }
@@ -141,7 +142,14 @@ span {
      left: 53%;
      color: white;
      display: none;
-     
+}
+.box4-content {
+     position: absolute;
+     z-index: 1;
+     margin: 2%;
+     left: 75%;
+     color: white;
+     display: none; 
 }
  .box1:hover .box1-content {
     display: block;
@@ -156,9 +164,14 @@ span {
     display: block;
     animation: slow 0.7s ease-in-out;
 }
+.box4:hover .box4-content {
+    display: block;
+    animation: slow 0.7s ease-in-out;
+}
 @keyframes slow {
     0% {
         opacity: 0;
+        color: white;
     }
     100% {
         opacity: 1;
