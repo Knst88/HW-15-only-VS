@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 HTML {
     height: 100%;
@@ -11,6 +12,7 @@ HTML {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    
 }
 .contacts {
     position: relative;
@@ -20,15 +22,16 @@ HTML {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     color: white;
+    
 }
 span {
     position: relative;
-    right: -40%;
+    left: 33%;
 }
 
 .menu {
     display: flex;
-    margin-top: 20%;
+    margin-top: 22%;
     width: 94%;
     height: 30px;
     margin-left: 3%;
@@ -107,10 +110,11 @@ span {
     transition: 0.8s ease-in-out;
  }
  p {
-    margin: 2.5px;
+    margin: 3.2px;
  }
  .box1-content p:hover,
- .box2-content p:hover {
+ .box2-content p:hover,
+ .box3-content p:hover {
     color: rgb(244, 65, 5);
     transition: 0.4s;
  }
@@ -130,10 +134,33 @@ span {
      color: white;
      display: none;
 }
+.box3-content {
+    position: absolute;
+     z-index: 1;
+     margin: 2%;
+     left: 53%;
+     color: white;
+     display: none;
+     
+}
  .box1:hover .box1-content {
     display: block;
-    
+    animation: slow 0.7s ease-in-out;
 }
 .box2:hover .box2-content {
     display: block;
+    animation: slow 0.7s ease-in-out;
+}
+
+.box3:hover .box3-content {
+    display: block;
+    animation: slow 0.7s ease-in-out;
+}
+@keyframes slow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
